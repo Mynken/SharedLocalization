@@ -1,14 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SharedLocalization"
+             xmlns:i18n="clr-namespace:SharedLocalization.Helpers.Localization;"
              x:Class="SharedLocalization.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+
+        <Label Text="{i18n:Translate HelloWorld}"></Label>
+
+        <Picker x:Name="languagePicker" Title="{i18n:Translate SelectLanguage}" SelectedIndexChanged="LanguagePicker_OnSelectedIndexChanged">
+            <Picker.Items>
+                <x:String>de-DE</x:String>
+                <x:String>en-US</x:String>
+                <x:String>ru-RU</x:String>
+            </Picker.Items>
+        </Picker>
     </StackLayout>
 
 </ContentPage>

@@ -150,6 +150,12 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharedLocalization.Common\SharedLocalization.Common.csproj">
+      <Project>{33e4ee3d-490b-4553-870c-c40eca4f0b64}</Project>
+      <Name>SharedLocalization.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\SharedLocalization\SharedLocalization.projitems" Label="Shared" />
 </Project>
