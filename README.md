@@ -94,9 +94,9 @@ Synatax for translate is quite simple:
     {i18n:Translate HelloWorld}
 ```
 
-1) our attribute;
-2) Property for transfer data;
-3) key in our .resx file;
+* 1) our attribute;
+* 2) Property for transfer data;
+* 3) key in our .resx file;
 
 *MainPage.xaml.cs*
 
